@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<title data-l10n-id="main-title">Title</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+    <script type="text/javascript" src="js/l10n.js"></script>
+    <link rel="prefetch" type="application/l10n" href="l10n.ini" />
+    <link rel="shortcut icon" href="pictures/favicon.png">
+    <style>
+        abbr                            { border-bottom: #999 dotted 1px; }
+        .slide.cover>div                { padding-top: 105px; }
+        .slide>div                      { padding-top: 45px; height: 560px; }
+        .border                         { border: 1px solid black; }
+        small                           { font-size: small; }
+        .slide                          { background: white url('pictures/devoxxfr-vertical.png') no-repeat 10px 30px; }
+        .slide .hashtag                 { float: left; color: white; text-decoration: none; border: 0; }
+        .slide.title h1                 { color: white; font-size: 70px; font-weight: bold; position: absolute; top: 130px; left: 400px; transform:rotate(-46deg); -webkit-transform:rotate(-46deg); 
+                                          line-height: 80px; background-color: rgba(0,0,0,0.6); padding: 10px 20px; width: 500px; }
+        .slide.title .color1            { background-color: #53B6BC; height: 400px; width: 400px; position: absolute; top: -200px; left: 200px; transform:rotate(-135deg); -webkit-transform:rotate(-135deg); }
+        .slide.title .color2            { background-color: #F5AF33; height: 400px; width: 400px; position: absolute; top: -270px; left: 300px; transform:rotate(-135deg); -webkit-transform:rotate(-135deg); }
+        .slide.title .color3            { background-color: white;   height: 400px; width: 400px; position: absolute; top: -340px; left: 400px; transform:rotate(-135deg); -webkit-transform:rotate(-135deg); }
+        .slide.title .footer            { background: #53B6BC url('pictures/devoxxfr-small.png') no-repeat center center; height: 50px; position: absolute; bottom: -25px; left: 0; right: 0; color: white; font-size: 24px; padding: 0 10px; }
+        .slide.title .footer a          { color: white; border: 0; }
+        .slide.title .footer .twitter   { float: right; }
+        .slide.title .footer .twitter img { display: inline; position: relative; z-index: 1; margin: 0 .2em 0 0; vertical-align: middle; }
+        .slide.title, .slide.cover      { background-position: center; background-size: 100%; }
+    </style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1 data-l10n-id="main-title"></h1>
+	</header>
+    <section class="slide cover" id="Cover" style="background-image: url('pictures/cover.jpg')"><div>
+        <style>
+            #Cover .titles       { margin: -105px -120px 0 -120px; }
+            #Cover h2            { font-size: 65px; padding: 60px 20px; margin: 0; background-color: white; color:#53B6BC; width: 90%;  }
+            #Cover h3            { background-color: #F5AF33; height: 40px; width: 85%; }
+            #Cover ul            { background-color: #53B6BC; font-size:30px; width: 60%; color: white; padding: 30px 15px; }
+            #Cover ul li         { padding: 0; font-weight: bold; }
+            #Cover ul a          { color: white; }
+            #Cover a.valtech     { margin-left: 40px; position: relative; top: -4px; }
+            #Cover a.valtech img { width: 130px; }
+            #Cover ul img        { display: inline; position: relative; z-index: 1; margin: 0 .2em 0 0; vertical-align: middle; }
+            #Cover a.twitter     { margin-right: 25px; }
+            #Cover h4            { background: white url('pictures/devoxxfr.png') no-repeat 10px 10px; height: 80px; margin-top: 100px; }
+            #Cover h5            { background: #53B6BC; height: 50px; margin-top: 5px; color: white; font-size: 24px; padding-left: 10px; }
+		</style>
+        <script defer>
+            var setLang = function(lng) {
+                document.webL10n.setLanguage(lng);
+                localStorage.lng = lng;
+            };
+            var startup = true;
+            window.addEventListener('localized', function() {
+                document.documentElement.lang = document.webL10n.getLanguage();
+                document.documentElement.dir = document.webL10n.getDirection();
+                if (startup) {
+                    startup = false;
+                    setLang('fr');
+                }
+            }, false);
+        </script>
+
+        <div class="titles">
+            <h2 data-l10n-id="main-title" style="width: 91%;"></h2>
+            <h3></h3>
+            <ul>
+                <li data-l10n-id="author" style="line-height: 1em;">
+                <li><img src="pictures/twitter.png">@pchaussalet
+            </ul>
+            <h4></h4>
+            <h5><a class="hashtag" href="https://twitter.com/search?q=%23dockerdevoxx2014">#DockerDevoxx2014</a></h5>
+        </div>
+	</div></section>
+    <section class="slide outline"><div>
+        <h2 data-l10n-id="outline-title"></h2>
+        <div class="prices">
+            <ul>
+                <li data-l10n-id="part-1">
+                <li data-l10n-id="part-2">
+                <li data-l10n-id="part-3">
+                <li data-l10n-id="part-4">
+                <li data-l10n-id="part-5">
+                <li data-l10n-id="part-6">
+            </ul>
+        </div>
+    </div></section>
+    <section class="slide cover title" style="background-image: url('pictures/part1.jpg')"><div>
+        <div class="color1"></div><div class="color2"></div><div class="color3"></div>
+        <h1 data-l10n-id="part-1" style="font-size: 74px"></h1>
+        <p class="footer"><a class="hashtag" href="https://twitter.com/search?q=%23dockerdevoxx2014">#DockerDevoxx2014</a><span class="twitter"><img src="pictures/twitter.png"><a href="https://twitter.com/pchaussalet" rel="me" class="twitter">@pchaussalet</a></span></p>
+    </div></section>
+    <section class="slide outline">
+        <div>
+            <!--<div style="background-image: url('pictures/docker.png'); background-position: center; background-color: transparent; background-repeat: no-repeat; background-size: 50%;"></div>-->
+            <img src="pictures/docker.png" style="width: 33%;"/>
+            <img src="pictures/archi.png" style="float: right; width: 75%;"/>
+        </div>
+    </section>
+    <section class="slide cover title" style="background-image: url('pictures/part2.jpg')"><div>
+        <div class="color1"></div><div class="color2"></div><div class="color3"></div>
+        <h1 data-l10n-id="part-2"></h1>
+        <p class="footer"><a class="hashtag" href="https://twitter.com/search?q=%23dockerdevoxx2014">#DockerDevoxx2014</a><span class="twitter"><img src="pictures/twitter.png"><a href="https://twitter.com/pchaussalet" rel="me" class="twitter">@pchaussalet</a></span></p>
+    </div></section>
+    <section class="slide outline"><div style="background-image: url('pictures/dev.png'); background-position: center; background-color: transparent; background-repeat: no-repeat; background-size: 50%;">
+    </div></section>
+    <section class="slide cover title" style="background-image: url('pictures/part3.jpg')"><div>
+        <div class="color1"></div><div class="color2"></div><div class="color3"></div>
+        <h1 data-l10n-id="part-3" style="font-size: 74px"></h1>
+        <p class="footer"><a class="hashtag" href="https://twitter.com/search?q=%23dockerdevoxx2014">#DockerDevoxx2014</a><span class="twitter"><img src="pictures/twitter.png"><a href="https://twitter.com/pchaussalet" rel="me" class="twitter">@pchaussalet</a></span></p>
+    </div></section>
+    <section class="slide outline"><div style="background-image: url('pictures/uat.png'); background-position: center; background-color: transparent; background-repeat: no-repeat; background-size: 50%;">
+    </div></section>
+    <section class="slide cover title" style="background-image: url('pictures/part4.jpg')"><div>
+        <div class="color1"></div><div class="color2"></div><div class="color3"></div>
+        <h1 data-l10n-id="part-4" style="font-size: 69px"></h1>
+        <p class="footer"><a class="hashtag" href="https://twitter.com/search?q=%23dockerdevoxx2014">#DockerDevoxx2014</a><span class="twitter"><img src="pictures/twitter.png"><a href="https://twitter.com/pchaussalet" rel="me" class="twitter">@pchaussalet</a></span></p>
+    </div></section>
+    <section class="slide outline"><div style="background-image: url('pictures/perf.png'); background-position: center; background-color: transparent; background-repeat: no-repeat; background-size: 50%;">
+    </div></section>
+    <section class="slide cover title" style="background-image: url('pictures/part5.jpg')"><div>
+        <div class="color1"></div><div class="color2"></div><div class="color3"></div>
+        <h1 data-l10n-id="part-5" style="font-size: 65px"></h1>
+        <p class="footer"><a class="hashtag" href="https://twitter.com/search?q=%23dockerdevoxx2014">#DockerDevoxx2014</a><span class="twitter"><img src="pictures/twitter.png"><a href="https://twitter.com/pchaussalet" rel="me" class="twitter">@pchaussalet</a></span></p>
+    </div></section>
+    <section class="slide outline"><div style="background-image: url('pictures/pre_prod.png'); background-position: center; background-color: transparent; background-repeat: no-repeat; background-size: 50%;">
+    </div></section>
+    <section class="slide cover title" style="background-image: url('pictures/part6.jpg')"><div>
+        <div class="color1"></div><div class="color2"></div><div class="color3"></div>
+        <h1 data-l10n-id="part-6-alt"></h1>
+        <p class="footer"><a class="hashtag" href="https://twitter.com/search?q=%23deboxxbtc">#DockerDevoxx2014</a><span class="twitter"><img src="pictures/twitter.png"><a href="https://twitter.com/pchaussalet" rel="me" class="twitter">@pchaussalet</a></span></p>
+    </div></section>
+    <section class="slide outline"><div style="background-image: url('pictures/kashing.jpg'); background-position: center; background-color: transparent; background-repeat: no-repeat; background-size: 66%;">
+    </div></section>
+    <section class="slide cover title" style="background-image: url('pictures/part7.jpg')"><div>
+        <div class="color1"></div><div class="color2"></div><div class="color3"></div>
+        <h1 data-l10n-id="part-7"></h1>
+        <p class="footer"><a class="hashtag" href="https://twitter.com/search?q=%23deboxxbtc">#DockerDevoxx2014</a><span class="twitter"><img src="pictures/twitter.png"><a href="https://twitter.com/pchaussalet" rel="me" class="twitter">@pchaussalet</a></span></p>
+    </div></section>
+    <div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+</body>
+</html>
