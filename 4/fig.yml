@@ -1,0 +1,56 @@
+nginx:
+  image: devoxx/nginx
+  ports:
+    - "80:80"
+  environment:
+    UPSTREAMS: 4
+  links:
+    - "appA:app1"
+    - "appB:app2"
+    - "appC:app3"
+    - "appD:app4"
+
+appA:
+  image: devoxx/app:1.0.0
+  expose:
+    - 8080
+  links:
+    - "mysql:db"
+  environment:
+    APP_DB_USERNAME: admin
+    APP_DB_PASSWORD: changeme
+appB:
+  image: devoxx/app:1.0.0
+  expose:
+    - 8080
+  links:
+    - "mysql:db"
+  environment:
+    APP_DB_USERNAME: admin
+    APP_DB_PASSWORD: changeme
+appC:
+  image: devoxx/app:1.0.0
+  expose:
+    - 8080
+  links:
+    - "mysql:db"
+  environment:
+    APP_DB_USERNAME: admin
+    APP_DB_PASSWORD: changeme
+appD:
+  image: devoxx/app:1.0.0
+  expose:
+    - 8080
+  links:
+    - "mysql:db"
+  environment:
+    APP_DB_USERNAME: admin
+    APP_DB_PASSWORD: changeme
+
+mysql:
+  image: devoxx/mysqld
+  volumes:
+    - /home/devoxx/data:/var/lib/db/mysql
+  expose:
+    - 3306
+
